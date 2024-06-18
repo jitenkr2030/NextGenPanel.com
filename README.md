@@ -1,7 +1,7 @@
 # NextGenPanel.com
 
 ## Overview
-NextGenPanel.com is a comprehensive web hosting control panel designed for web hosting companies, developers, and system administrators. It offers both open-source and SaaS deployment options, providing a powerful and user-friendly interface for managing web hosting infrastructure.
+NextGenPanel.net is a comprehensive web hosting control panel designed for web hosting companies, developers, and system administrators. It offers both open-source and SaaS deployment options, providing a powerful and user-friendly interface for managing web hosting infrastructure.
 
 ## Features
 
@@ -63,7 +63,7 @@ The SaaS version offers a cloud-based deployment with a pay-as-you-go model. It 
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/nextgenpanel/nextgenpanel.com.git
+   git clone https://github.com/nextgenpanel/nextgenpanel.net.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -96,7 +96,7 @@ Comprehensive documentation is available in the `docs` directory, including inst
 We welcome contributions from the community. Please read our [contributing guidelines](CONTRIBUTING.md) for more details.
 
 ## License
-NextGenPanel.com is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+NextGenPanel.net is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Support
 For any questions or issues, please contact our support team at support@nextgenpanel.com or visit our community forums.
