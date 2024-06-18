@@ -37,7 +37,7 @@ NextGenPanel.net is a comprehensive web hosting control panel designed for web h
 
 ## Deployment Options
 ### Open-Source Version
-The open-source version of NextGenPanel.com allows web hosting companies to self-host the control panel on their own infrastructure. It includes most of the core functionalities and additional features, with some limitations compared to the SaaS version.
+The open-source version of NextGenPanel.net allows web hosting companies to self-host the control panel on their own infrastructure. It includes most of the core functionalities and additional features, with some limitations compared to the SaaS version.
 
 ### SaaS Version
 The SaaS version offers a cloud-based deployment with a pay-as-you-go model. It includes all features of the open-source version plus additional premium features, enhanced security, automatic updates, and priority support.
