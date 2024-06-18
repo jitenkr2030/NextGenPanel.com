@@ -1,4 +1,4 @@
-# NextGenPanel.com
+# NextGenPanel.net
 
 ## Overview
 NextGenPanel.net is a comprehensive web hosting control panel designed for web hosting companies, developers, and system administrators. It offers both open-source and SaaS deployment options, providing a powerful and user-friendly interface for managing web hosting infrastructure.
