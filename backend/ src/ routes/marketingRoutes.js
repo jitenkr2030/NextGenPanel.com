@@ -1,9 +1,12 @@
-// src/routes/marketingRoutes.js
 const express = require('express');
 const router = express.Router();
-const MarketingController = require('../controllers/MarketingController');
+const marketingController = require('../controllers/marketingController');
 
-router.get('/', MarketingController.getCampaigns);
-router.post('/', MarketingController.createCampaign);
+// Marketing management routes
+router.get('/', marketingController.getAllMarketingCampaigns);
+router.get('/:id', marketingController.getMarketingCampaignById);
+router.post('/', marketingController.createMarketingCampaign);
+router.put('/:id', marketingController.updateMarketingCampaign);
+router.delete('/:id', marketingController.deleteMarketingCampaign);
 
 module.exports = router;
