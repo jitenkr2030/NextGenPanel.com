@@ -1,30 +1,53 @@
-import React, { createContext, useState, useEffect } from 'react';
-import AuthService from '../services/AuthService';
+import React, { createContext, useState, useEffect, useContext } from 'react';
 
-const AuthContext = createContext();
+// Create the AuthContext with default values
+const AuthContext = createContext({
+  user: null,
+  login: () => {},
+  logout: () => {},
+  isAuthenticated: false,
+});
 
+// AuthProvider component to wrap around the application
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    // Logic to check if user is already logged in
+    // Load user from local storage if available
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
   }, []);
 
-  const login = async (credentials) => {
-    const data = await AuthService.login(credentials);
-    setUser(data.user);
+  const login = (username, password) => {
+    // Simulate login
+    const loggedInUser = { username, token: 'fake-jwt-token' };
+    localStorage.setItem('user', JSON.stringify(loggedInUser));
+    setUser(loggedInUser);
   };
 
   const logout = () => {
-    AuthService.logout();
+    localStorage.removeItem('user');
     setUser(null);
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        login,
+        logout,
+        isAuthenticated: !!user,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );
 };
 
-export default AuthContext;
+// Custom hook to use the AuthContext
+export const useAuth = () => {
+  return useContext(AuthContext);
+};
+
